@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;    
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: fit-content;
+    background: linear-gradient(to right, rgb(235, 198, 128), rgb(235, 235, 131));
+
+}
+.container1{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    border-radius: 24px;
+    font-weight: bold;
+    background-color: rgb(242, 207, 164);
+}
+.page-btn{
+    padding: 7px;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    color: red;
+    background-color: rgb(178, 246, 111);
+}
+.rb{
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+}
+.btn{
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+}
+.btn-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-content{
+    display: flex;
+    justify-content: space-between
+    
+}
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+input{
+    padding: 6px;
+}
+.link{
+    cursor: pointer;
+}
+
+.validation {
+    font-size: 10px;
+    color: red;
+    font-weight: bold;
+    line-height: 0.2;
+}
+.lb {
+    display: flex;
+    justify-content: start;
+}
+
+.post{
+    max-height: fit-content;
+    height: 30%;
+}
