@@ -1,14 +1,19 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Posts = () => {
   const [getPosts, setGetPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const navigate = useNavigate();
 
   const fetchPosts = async (page) => {
     try {
       const token = localStorage.getItem("token");
+      if (!token) {
+        return navigate("/");
+      }
 
       const config = {
         headers: {
@@ -17,7 +22,7 @@ const Posts = () => {
       };
 
       const response = await axios.get(
-        `http://localhost:9988/post/getAllPosts?page=${page}`,
+        `https://hyrr.onrender.com/post/getAllPosts?page=${page}`,
         config
       );
 

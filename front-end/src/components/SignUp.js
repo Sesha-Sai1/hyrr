@@ -67,7 +67,7 @@ const SignUp = () => {
       check
     ) {
       axios
-        .post("http://localhost:9988/Register/register", {
+        .post("https://hyrr.onrender.com/Register/register", {
           name,
           email,
           password,

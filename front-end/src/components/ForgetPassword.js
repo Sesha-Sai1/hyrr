@@ -37,7 +37,7 @@ const ForgetPassword = () => {
         return;
       }
       const response = await axios.post(
-        "http://localhost:9988/Register/changePassword",
+        "https://hyrr.onrender.com/Register/changePassword",
         {
           email,
           password,
